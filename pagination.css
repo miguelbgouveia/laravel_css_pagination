@@ -1,0 +1,61 @@
+/*
+ * Created: 2013-02-26 Miguel Gouveia
+ * 
+ * CSS Style definition for the pagination in the laravel PHP framework 
+ * version 3.2.*.
+ * 
+ */
+.pagination { 
+  width:602px;
+	margin:5px auto;
+	padding:0px;
+	text-align:center;
+	color:#aaa;
+	border:1px solid #ddd; 
+	border-radius:5px;
+	background:#fcfcfc;
+	background-image:-webkit-linear-gradient(top, #fcfcfc, #eaeaea);
+	background-image:-moz-linear-gradient(top, #fcfcfc, #eaeaea);
+	background-image:-o-linear-gradient(top, #fcfcfc, #eaeaea);
+	background-image:-ms-linear-gradient(top, #fcfcfc, #eaeaea);
+}
+.pagination a {
+	padding:7px;
+	text-decoration:none; 
+	color:#667F99;
+}
+.pagination li.active a {
+	font-weight:bold;
+}
+.pagination li:not(.disabled) a:hover {
+	border:1px solid #ddd; 
+	border-radius:5px;
+	color:#000;
+	padding:10px 6px;
+	background:#666;
+	background-image:-webkit-linear-gradient(top, #fcfcfc, #eaeaea);
+	background-image:-moz-linear-gradient(top, #fcfcfc, #eaeaea);
+	background-image:-o-linear-gradient(top, #fcfcfc, #eaeaea);
+	background-image:-ms-linear-gradient(top, #fcfcfc, #eaeaea);
+}
+
+.pagination li
+{
+	display: inline;
+	list-style-type: none;
+}
+
+.pagination ul
+{
+	margin: 0px 0px;
+	padding: 0 0px;
+}
+
+.pagination  li.disabled a:hover {
+       pointer-events: none;
+       cursor: default;
+}
+
+.pagination  li.disabled a {
+       color: #B6B8BB;
+}
